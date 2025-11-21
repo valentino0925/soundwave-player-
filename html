@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="gyroscope=()">
-    <title>SoundWave - Zenelejátszó</title>
+    <title>SoundWave - YouTube Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/soundwave.css">
 </head>
 <body>
     <div class="container">
-        <!-- Oldalsáv -->
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="logo">
                 <i class="fas fa-music"></i>
@@ -36,15 +35,15 @@
                             <i class="fas fa-play"></i>
                         </div>
                     </li>
-                    <li data-playlist="chill">
-                        Chill zenék
+                    <li data-playlist="hiphop">
+                        Hip-Hop
                         <div class="playlist-actions">
                             <i class="fas fa-play"></i>
                             <i class="fas fa-edit"></i>
                         </div>
                     </li>
-                    <li data-playlist="workout">
-                        Edzéshez
+                    <li data-playlist="pop">
+                        Pop
                         <div class="playlist-actions">
                             <i class="fas fa-play"></i>
                             <i class="fas fa-edit"></i>
@@ -54,9 +53,9 @@
             </div>
         </div>
         
-        <!-- Fő tartalom -->
+        <!-- Main Content -->
         <div class="main-content">
-            <!-- Felső sáv -->
+            <!-- Top Bar -->
             <div class="top-bar">
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
@@ -73,25 +72,25 @@
             <!-- Banner -->
             <div class="banner">
                 <div class="banner-content">
-                    <h2>Prémium élmény</h2>
-                    <p>Hallgass zene reklámok nélkül és offline módban</p>
+                    <h2>YouTube Music Streaming</h2>
+                    <p>Hallgass zene közvetlenül YouTube-ról</p>
                     <button class="btn" id="premium-btn">Prémium próba</button>
                 </div>
                 <div class="banner-image">
-                    <i class="fas fa-crown"></i>
+                    <i class="fab fa-youtube"></i>
                 </div>
             </div>
             
-            <!-- Zenék listája -->
+            <!-- Home Page -->
             <div class="music-section" id="home-page">
                 <h3>Legnépszerűbb dalok</h3>
                 <div class="song-grid" id="home-songs">
-                    <!-- Ide kerülnek a zenék -->
+                    <!-- Songs will be loaded here -->
                 </div>
                 <div class="loader" id="home-loader">Zenék betöltése...</div>
             </div>
             
-            <!-- Felfedezés oldal -->
+            <!-- Discover Page -->
             <div class="music-section" id="discover-page" style="display: none;">
                 <h3>Felfedezés</h3>
                 <div class="category-tabs" id="discover-tabs">
@@ -102,25 +101,25 @@
                     <div class="category-tab" data-category="mood">Hangulat</div>
                 </div>
                 <div class="song-grid" id="discover-songs">
-                    <!-- Ide kerülnek a felfedezés zenéi -->
+                    <!-- Discovery songs will be loaded here -->
                 </div>
                 <div class="loader" id="discover-loader">Zenék betöltése...</div>
             </div>
             
-            <!-- Trend oldal -->
+            <!-- Trending Page -->
             <div class="music-section" id="trending-page" style="display: none;">
                 <h3>Trend zenék</h3>
                 <div class="song-grid" id="trending-songs">
-                    <!-- Ide kerülnek a trend zenék -->
+                    <!-- Trending songs will be loaded here -->
                 </div>
                 <div class="loader" id="trending-loader">Zenék betöltése...</div>
             </div>
             
-            <!-- Kedvencek oldal -->
+            <!-- Favorites Page -->
             <div class="music-section" id="favorites-page" style="display: none;">
                 <h3>Kedvenc zenéid</h3>
                 <div class="song-grid" id="favorites-grid">
-                    <!-- Ide kerülnek a kedvenc zenék -->
+                    <!-- Favorite songs will be loaded here -->
                 </div>
                 <div id="favorites-empty" style="display: none; text-align: center; padding: 40px; color: #aaa;">
                     <i class="fas fa-heart" style="font-size: 48px; margin-bottom: 16px;"></i>
@@ -128,11 +127,11 @@
                 </div>
             </div>
             
-            <!-- Playlist részletek -->
+            <!-- Playlist Details -->
             <div class="playlist-details" id="playlist-details">
                 <h3 id="playlist-details-title">Playlist neve</h3>
                 <ul class="playlist-songs" id="playlist-songs">
-                    <!-- Ide kerülnek a playlist zenéi -->
+                    <!-- Playlist songs will be loaded here -->
                 </ul>
                 <div id="playlist-empty" style="display: none; text-align: center; padding: 20px; color: #aaa;">
                     <p>Ez a lejátszási lista üres</p>
@@ -141,11 +140,11 @@
         </div>
     </div>
     
-    <!-- Lejátszó -->
+    <!-- Player -->
     <div class="player">
         <div class="current-song">
             <div class="song-thumb">
-                <img src="images/default-album.jpg" alt="Album Cover" id="current-song-thumb">
+                <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Album Cover" id="current-song-thumb">
             </div>
             <div class="song-info">
                 <div class="song-title" id="current-song-title">Válassz egy számot</div>
@@ -175,7 +174,7 @@
         </div>
         
         <div class="additional-controls">
-            <i class="fas fa-list" id="queue-btn"></i>
+            <i class="fab fa-youtube" id="youtube-btn" title="YouTube"></i>
             <div class="volume-container">
                 <i class="fas fa-volume-up" id="volume-icon"></i>
                 <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.01" value="0.7">
@@ -183,13 +182,14 @@
         </div>
     </div>
 
-    <!-- Audio elem a háttérben -->
-    <audio id="audio-player"></audio>
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/soundwave.js"></script>
 
-    <!-- YouTube player container -->
-    <div id="youtube-player" style="display: none;"></div>
+    <!-- Toast Notifications -->
+    <div class="toast" id="toast"></div>
 
-    <!-- Modal ablakok -->
+    <!-- Modal Windows -->
     <div class="modal" id="create-playlist-modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -209,29 +209,6 @@
             <div class="modal-footer">
                 <button class="btn-secondary" id="cancel-playlist">Mégse</button>
                 <button class="btn" id="save-playlist">Létrehozás</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="add-to-playlist-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Zene hozzáadása lejátszási listához</h3>
-                <button class="close-modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p id="selected-song-info">Kiválasztott zene: </p>
-                <div class="form-group">
-                    <label for="playlist-select">Válassz lejátszási listát</label>
-                    <select id="playlist-select">
-                        <option value="chill">Chill zenék</option>
-                        <option value="workout">Edzéshez</option>
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-secondary" id="cancel-add">Mégse</button>
-                <button class="btn" id="add-to-playlist">Hozzáadás</button>
             </div>
         </div>
     </div>
@@ -264,10 +241,5 @@
             </div>
         </div>
     </div>
-
-    <!-- Toast értesítések -->
-    <div class="toast" id="toast"></div>
-
-    <script src="js/soundwave.js"></script>
 </body>
 </html>
