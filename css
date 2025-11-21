@@ -24,7 +24,7 @@ body {
     gap: 20px;
 }
 
-/* Sidebar stílusok */
+/* Sidebar Styles */
 .sidebar {
     width: 260px;
     background: rgba(25, 25, 25, 0.9);
@@ -132,7 +132,7 @@ body {
     font-size: 14px;
 }
 
-/* Fő tartalom stílusok */
+/* Main Content */
 .main-content {
     flex: 1;
     display: flex;
@@ -202,9 +202,9 @@ body {
     font-weight: bold;
 }
 
-/* Banner stílusok */
+/* Banner Styles */
 .banner {
-    background: linear-gradient(to right, #ff2e63, #ff5a36);
+    background: linear-gradient(to right, #ff0000, #cc0000);
     border-radius: 16px;
     padding: 30px;
     display: flex;
@@ -238,7 +238,7 @@ body {
 
 .btn {
     background: #fff;
-    color: #ff2e63;
+    color: #ff0000;
     border: none;
     padding: 12px 24px;
     border-radius: 24px;
@@ -263,7 +263,7 @@ body {
     opacity: 0.8;
 }
 
-/* Zenék szekció */
+/* Music Section */
 .music-section h3 {
     margin: 24px 0 20px;
     font-size: 24px;
@@ -375,7 +375,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Player stílusok */
+/* Player Styles */
 .player {
     background: rgba(25, 25, 25, 0.95);
     padding: 16px 30px;
@@ -384,6 +384,11 @@ body {
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .current-song {
@@ -571,7 +576,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Reszponzív design */
+/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         flex-direction: column;
@@ -605,6 +610,10 @@ body {
     .song-grid {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
+    
+    .player {
+        position: relative;
+    }
 }
 
 @media (max-width: 768px) {
@@ -626,6 +635,7 @@ body {
         flex-direction: column;
         gap: 16px;
         padding: 16px;
+        position: relative;
     }
     
     .current-song, .player-controls, .additional-controls {
@@ -642,7 +652,7 @@ body {
     }
 }
 
-/* Animációk */
+/* Animations */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -653,7 +663,7 @@ body {
     animation: pulse 2s infinite;
 }
 
-/* Speciális effektek */
+/* Special Effects */
 .gradient-text {
     background: linear-gradient(to right, #ff2e63, #ff5a36);
     -webkit-background-clip: text;
@@ -667,12 +677,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Kedvenc ikon stílus */
+/* Favorite Icon */
 .favorite.active {
     color: #ff2e63 !important;
 }
 
-/* Modal stílusok */
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -758,7 +768,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Toast értesítések */
+/* Toast Notifications */
 .toast {
     position: fixed;
     bottom: 100px;
@@ -779,7 +789,7 @@ body {
     opacity: 1;
 }
 
-/* Playlist részletek */
+/* Playlist Details */
 .playlist-details {
     display: none;
     margin-top: 20px;
@@ -857,4 +867,14 @@ body {
 
 .loader.active {
     display: block;
+}
+
+/* YouTube Button */
+#youtube-btn {
+    color: #ff0000;
+    font-size: 20px;
+}
+
+#youtube-btn:hover {
+    color: #cc0000;
 }
