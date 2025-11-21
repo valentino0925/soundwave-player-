@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="gyroscope=()">
+    <title>SoundWave - Zenelejátszó</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/soundwave.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Oldalsáv -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>ꜱᴏᴜɴᴅᴡᴀᴠᴇ</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active nav-link" data-page="home"><i class="fas fa-home"></i>Kezdőlap</a></li>
+                <li><a href="#" class="nav-link" data-page="discover"><i class="fas fa-compass"></i>Felfedezés</a></li>
+                <li><a href="#" class="nav-link" data-page="trending"><i class="fas fa-fire"></i>Trend</a></li>
+                <li><a href="#" class="nav-link" data-page="favorites"><i class="fas fa-heart"></i>Kedvencek</a></li>
+            </ul>
+            
+            <div class="playlist-section">
+                <div class="playlist-header">
+                    <h4>Playlisteim</h4>
+                    <i class="fas fa-plus" id="create-playlist-btn"></i>
+                </div>
+                <ul class="playlist-list" id="playlist-list">
+                    <li data-playlist="favorites">
+                        Kedvencek
+                        <div class="playlist-actions">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </li>
+                    <li data-playlist="chill">
+                        Chill zenék
+                        <div class="playlist-actions">
+                            <i class="fas fa-play"></i>
+                            <i class="fas fa-edit"></i>
+                        </div>
+                    </li>
+                    <li data-playlist="workout">
+                        Edzéshez
+                        <div class="playlist-actions">
+                            <i class="fas fa-play"></i>
+                            <i class="fas fa-edit"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Fő tartalom -->
+        <div class="main-content">
+            <!-- Felső sáv -->
+            <div class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Keresés a zenék között..." id="search-input">
+                </div>
+                
+                <div class="user-profile">
+                    <div class="user-avatar">BK</div>
+                    <span>Bence</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            
+            <!-- Banner -->
+            <div class="banner">
+                <div class="banner-content">
+                    <h2>Prémium élmény</h2>
+                    <p>Hallgass zene reklámok nélkül és offline módban</p>
+                    <button class="btn" id="premium-btn">Prémium próba</button>
+                </div>
+                <div class="banner-image">
+                    <i class="fas fa-crown"></i>
+                </div>
+            </div>
+            
+            <!-- Zenék listája -->
+            <div class="music-section" id="home-page">
+                <h3>Legnépszerűbb dalok</h3>
+                <div class="song-grid" id="home-songs">
+                    <!-- Ide kerülnek a zenék -->
+                </div>
+                <div class="loader" id="home-loader">Zenék betöltése...</div>
+            </div>
+            
+            <!-- Felfedezés oldal -->
+            <div class="music-section" id="discover-page" style="display: none;">
+                <h3>Felfedezés</h3>
+                <div class="category-tabs" id="discover-tabs">
+                    <div class="category-tab active" data-category="featured">Kiemelt</div>
+                    <div class="category-tab" data-category="playlisted">Playlisted</div>
+                    <div class="category-tab" data-category="popular">Felkapottak</div>
+                    <div class="category-tab" data-category="new">Új számok</div>
+                    <div class="category-tab" data-category="mood">Hangulat</div>
+                </div>
+                <div class="song-grid" id="discover-songs">
+                    <!-- Ide kerülnek a felfedezés zenéi -->
+                </div>
+                <div class="loader" id="discover-loader">Zenék betöltése...</div>
+            </div>
+            
+            <!-- Trend oldal -->
+            <div class="music-section" id="trending-page" style="display: none;">
+                <h3>Trend zenék</h3>
+                <div class="song-grid" id="trending-songs">
+                    <!-- Ide kerülnek a trend zenék -->
+                </div>
+                <div class="loader" id="trending-loader">Zenék betöltése...</div>
+            </div>
+            
+            <!-- Kedvencek oldal -->
+            <div class="music-section" id="favorites-page" style="display: none;">
+                <h3>Kedvenc zenéid</h3>
+                <div class="song-grid" id="favorites-grid">
+                    <!-- Ide kerülnek a kedvenc zenék -->
+                </div>
+                <div id="favorites-empty" style="display: none; text-align: center; padding: 40px; color: #aaa;">
+                    <i class="fas fa-heart" style="font-size: 48px; margin-bottom: 16px;"></i>
+                    <p>Még nincsenek kedvenc zenéid</p>
+                </div>
+            </div>
+            
+            <!-- Playlist részletek -->
+            <div class="playlist-details" id="playlist-details">
+                <h3 id="playlist-details-title">Playlist neve</h3>
+                <ul class="playlist-songs" id="playlist-songs">
+                    <!-- Ide kerülnek a playlist zenéi -->
+                </ul>
+                <div id="playlist-empty" style="display: none; text-align: center; padding: 20px; color: #aaa;">
+                    <p>Ez a lejátszási lista üres</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Lejátszó -->
+    <div class="player">
+        <div class="current-song">
+            <div class="song-thumb">
+                <img src="images/default-album.jpg" alt="Album Cover" id="current-song-thumb">
+            </div>
+            <div class="song-info">
+                <div class="song-title" id="current-song-title">Válassz egy számot</div>
+                <div class="song-artist" id="current-song-artist">-</div>
+            </div>
+            <i class="far fa-heart" id="player-favorite"></i>
+        </div>
+        
+        <div class="player-controls">
+            <div class="control-buttons">
+                <i class="fas fa-random" id="shuffle"></i>
+                <i class="fas fa-step-backward" id="prev"></i>
+                <div class="play-pause" id="play-pause">
+                    <i class="fas fa-play"></i>
+                </div>
+                <i class="fas fa-step-forward" id="next"></i>
+                <i class="fas fa-redo" id="repeat"></i>
+            </div>
+            <div class="progress-container">
+                <span class="progress-time" id="current-time">0:00</span>
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-handle"></div>
+                </div>
+                <span class="progress-time" id="duration">0:00</span>
+            </div>
+        </div>
+        
+        <div class="additional-controls">
+            <i class="fas fa-list" id="queue-btn"></i>
+            <div class="volume-container">
+                <i class="fas fa-volume-up" id="volume-icon"></i>
+                <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.01" value="0.7">
+            </div>
+        </div>
+    </div>
 
+    <!-- Audio elem a háttérben -->
+    <audio id="audio-player"></audio>
+
+    <!-- YouTube player container -->
+    <div id="youtube-player" style="display: none;"></div>
+
+    <!-- Modal ablakok -->
+    <div class="modal" id="create-playlist-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Új lejátszási lista</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="playlist-name">Lejátszási lista neve</label>
+                    <input type="text" id="playlist-name" placeholder="Add meg a lista nevét">
+                </div>
+                <div class="form-group">
+                    <label for="playlist-description">Leírás (opcionális)</label>
+                    <input type="text" id="playlist-description" placeholder="Rövid leírás">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-playlist">Mégse</button>
+                <button class="btn" id="save-playlist">Létrehozás</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="add-to-playlist-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Zene hozzáadása lejátszási listához</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="selected-song-info">Kiválasztott zene: </p>
+                <div class="form-group">
+                    <label for="playlist-select">Válassz lejátszási listát</label>
+                    <select id="playlist-select">
+                        <option value="chill">Chill zenék</option>
+                        <option value="workout">Edzéshez</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-add">Mégse</button>
+                <button class="btn" id="add-to-playlist">Hozzáadás</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="premium-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>SoundWave Prémium</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Prémium előnyök:</p>
+                <ul>
+                    <li>Zenehallgatás reklámok nélkül</li>
+                    <li>Offline módban is elérhető</li>
+                    <li>Korlátlan számú zene letöltése</li>
+                    <li>Magas minőségű hang (320 kbps)</li>
+                </ul>
+                <div class="form-group">
+                    <label for="premium-plan">Válassz csomagot</label>
+                    <select id="premium-plan">
+                        <option value="monthly">Havi előfizetés - 1.490 Ft/hó</option>
+                        <option value="yearly">Éves előfizetés - 14.900 Ft/év</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-premium">Mégse</button>
+                <button class="btn" id="buy-premium">Előfizetés</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast értesítések -->
+    <div class="toast" id="toast"></div>
+
+    <script src="js/soundwave.js"></script>
+</body>
+</html>
