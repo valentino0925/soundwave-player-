@@ -1,1 +1,3 @@
-cd d:\hv\soundwave ; py -m http.server 8000
+--Szerver létrehozása -> cd d:\hv\soundwave ; py -m http.server 8000
+
+--Szerver megnyitása -> http://localhost:8000/{fájlneve}
