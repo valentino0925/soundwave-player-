@@ -5,6 +5,12 @@
     font-family: 'Roboto', 'Segoe UI', sans-serif;
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 body {
     background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
     color: #fff;
@@ -12,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    padding-bottom: 120px; /* Account for fixed player height */
 }
 
 .container {
@@ -138,6 +145,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
 }
 
 .top-bar {
@@ -867,6 +876,43 @@ body {
 
 .loader.active {
     display: block;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 120px; /* Push above fixed player */
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    min-width: 40px;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: rgba(255, 46, 99, 0.7);
+}
+
+.pagination-btn.active {
+    background: #ff2e63;
+    color: #fff;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* YouTube Button */
