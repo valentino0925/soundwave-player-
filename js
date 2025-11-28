@@ -1,64 +1,519 @@
-// YouTube Music Database with your exact embed codes
 const musicDatabase = [
     {
-        id: 1,
-        title: "Levitating",
-        artist: "Dua Lipa ft. DaBaby",
-        genre: "pop",
-        mood: "upbeat",
-        cover: "https://i.ytimg.com/vi/TUVcZfQe-Kw/hqdefault.jpg",
-        embedCode: '<iframe width="1048" height="729" src="https://www.youtube.com/embed/TUVcZfQe-Kw" title="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        youtubeId: "TUVcZfQe-Kw",
-        featured: true,
-        popular: true
+        "id": 1,
+        "title": "Levitating",
+        "artist": "Dua Lipa ft. DaBaby",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/TUVcZfQe-Kw/hqdefault.jpg",
+        "youtubeId": "TUVcZfQe-Kw",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/TUVcZfQe-Kw?list=RDTUVcZfQe-Kw" title="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
     },
     {
-        id: 2,
-        title: "SICKO MODE",
-        artist: "Travis Scott ft. Drake",
-        genre: "hip-hop",
-        mood: "intense",
-        cover: "https://i.ytimg.com/vi/6ONRf7h3Mdk/hqdefault.jpg",
-        embedCode: '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6ONRf7h3Mdk?list=RD6ONRf7h3Mdk" title="Travis Scott - SICKO MODE (Official Video) ft. Drake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        youtubeId: "6ONRf7h3Mdk",
-        featured: true,
-        popular: true
+        "id": 2,
+        "title": "SICKO MODE",
+        "artist": "Travis Scott ft. Drake",
+        "genre": "hip-hop",
+        "mood": "intense",
+        "cover": "https://i.ytimg.com/vi/6ONRf7h3Mdk/hqdefault.jpg",
+        "youtubeId": "6ONRf7h3Mdk",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6ONRf7h3Mdk?list=RD6ONRf7h3Mdk" title="Travis Scott - SICKO MODE (Official Video) ft. Drake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
     },
     {
-        id: 3,
-        title: "FE!N",
-        artist: "Travis Scott ft. Playboi Carti",
-        genre: "hip-hop",
-        mood: "intense",
-        cover: "https://i.ytimg.com/vi/B9synWjqBn8/hqdefault.jpg",
-        embedCode: '<iframe width="1296" height="729" src="https://www.youtube.com/embed/B9synWjqBn8?list=RDB9synWjqBn8" title="Travis Scott - FE!N ft. Playboi Carti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        youtubeId: "B9synWjqBn8",
-        featured: false,
-        popular: true
+        "id": 3,
+        "title": "FE!N",
+        "artist": "Travis Scott ft. Playboi Carti",
+        "genre": "hip-hop",
+        "mood": "intense",
+        "cover": "https://i.ytimg.com/vi/B9synWjqBn8/hqdefault.jpg",
+        "youtubeId": "B9synWjqBn8",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/B9synWjqBn8?list=RDB9synWjqBn8" title="Travis Scott - FE!N ft. Playboi Carti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
     },
     {
-        id: 4,
-        title: "SAD!",
-        artist: "XXXTENTACION",
-        genre: "hip-hop",
-        mood: "emotional",
-        cover: "https://i.ytimg.com/vi/pgN-vvVVxMA/maxresdefault.jpg",
-        embedCode: '<iframe width="1296" height="729" src="https://www.youtube.com/embed/pgN-vvVVxMA?list=RDpgN-vvVVxMA" title="XXXTENTACION - SAD!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        youtubeId: "pgN-vvVVxMA",
-        featured: true,
-        popular: true
+        "id": 4,
+        "title": "SAD!",
+        "artist": "XXXTENTACION",
+        "genre": "hip-hop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/pgN-vvVVxMA/maxresdefault.jpg",
+        "youtubeId": "pgN-vvVVxMA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/pgN-vvVVxMA?list=RDpgN-vvVVxMA" title="XXXTENTACION - SAD!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
     },
     {
-        id: 5,
-        title: "Tek Tek",
-        artist: "Juicce, Ishimaru",
-        genre: "electronic",
-        mood: "energetic",
-        cover: "https://i.ytimg.com/vi/dzo0UoPHZPU/hqdefault.jpg",
-        embedCode: '<iframe width="1296" height="729" src="https://www.youtube.com/embed/dzo0UoPHZPU?list=RDdzo0UoPHZPU" title="Juicce, Ishimaru - Tek Tek Tek (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-        youtubeId: "dzo0UoPHZPU",
-        featured: true,
-        popular: true
+        "id": 5,
+        "title": "Tek Tek",
+        "artist": "Juicce, Ishimaru",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/dzo0UoPHZPU/hqdefault.jpg",
+        "youtubeId": "dzo0UoPHZPU",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/dzo0UoPHZPU?list=RDdzo0UoPHZPU" title="Juicce, Ishimaru - Tek Tek Tek (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 6,
+        "title": "Gangnam Style",
+        "artist": "PSY",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg",
+        "youtubeId": "9bZkp7q19f0",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/yDiXQl7X0UY?list=RDyDiXQl7X0UY" title="Steve Aoki, Chris Lake & Tujamo - Boneless (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 7,
+        "title": "Lean On",
+        "artist": "Major Lazer & DJ Snake ft. MØ",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/YqeW9_5kURI/hqdefault.jpg",
+        "youtubeId": "YqeW9_5kURI",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/YqeW9_5kURI?list=RDYqeW9_5kURI" title="Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 8,
+        "title": "ELALUDNI",
+        "artist": "Desh",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/_8x21zThSXQ/hqdefault.jpg",
+        "youtubeId": "_8x21zThSXQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/_8x21zThSXQ?list=RDATVPXuVdD9M" title="Kungs vs Cookin\' on 3 Burners - This Girl (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 9,
+        "title": "Seve",
+        "artist": "Tez Cadey",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/8aShfolR6w8/hqdefault.jpg",
+        "youtubeId": "8aShfolR6w8",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/8aShfolR6w8?list=RD8aShfolR6w8" title="Tez Cadey - Seve (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 10,
+        "title": "California Gurls",
+        "artist": "Katy Perry ft. Snoop Dogg",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/F57P9C4SAW4/hqdefault.jpg",
+        "youtubeId": "F57P9C4SAW4",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/F57P9C4SAW4?list=RD6Uyu7Wq-VOs" title="Robin Schulz - Sugar (feat. Francesco Yates) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 11,
+        "title": "Attention",
+        "artist": "Charlie Puth",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg",
+        "youtubeId": "nfs8NYg7yQM",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/nfs8NYg7yQM?list=RD6Uyu7Wq-VOs" title="Jonas Blue - Fast Car (feat. Dakota) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 12,
+        "title": "Riptide",
+        "artist": "Vance Joy",
+        "genre": "indie",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/uJ_1HMAGb4k/hqdefault.jpg",
+        "youtubeId": "uJ_1HMAGb4k",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/uJ_1HMAGb4k?list=RDuJ_1HMAGb4k" title="Vance Joy - Riptide (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 13,
+        "title": "Ho Hey",
+        "artist": "The Lumineers",
+        "genre": "indie",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/zvCBSSwgtg4/hqdefault.jpg",
+        "youtubeId": "zvCBSSwgtg4",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/zvCBSSwgtg4?list=RDzvCBSSwgtg4" title="The Lumineers - Ho Hey (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 14,
+        "title": "Little Talks",
+        "artist": "Of Monsters and Men",
+        "genre": "indie",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/ghb6eDopW8I/hqdefault.jpg",
+        "youtubeId": "ghb6eDopW8I",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/ghb6eDopW8I?list=RDghb6eDopW8I" title="Of Monsters and Men - Little Talks (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 15,
+        "title": "Pumped Up Kicks",
+        "artist": "Foster The People",
+        "genre": "indie",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/SDTZ7iX4vTQ/hqdefault.jpg",
+        "youtubeId": "SDTZ7iX4vTQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/SDTZ7iX4vTQ?list=RDSDTZ7iX4vTQ" title="Foster The People - Pumped Up Kicks (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 16,
+        "title": "Take Me To Church",
+        "artist": "Hozier",
+        "genre": "indie",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/PVjiKRfKpPI/hqdefault.jpg",
+        "youtubeId": "PVjiKRfKpPI",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/PVjiKRfKpPI?list=RDPVjiKRfKpPI" title="Hozier - Take Me To Church (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 17,
+        "title": "I need",
+        "artist": "Lithe",
+        "genre": "indie",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/QeeIBwJ7ztc/hqdefault.jpg",
+        "youtubeId": "QeeIBwJ7ztc",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/QeeIBwJ7ztc?list=RDVHR9fP9wKCQ" title="George Ezra - Budapest (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 18,
+        "title": "Shut Up and Dance",
+        "artist": "Walk the Moon",
+        "genre": "indie",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/6JCLY0Rlx6Q/hqdefault.jpg",
+        "youtubeId": "6JCLY0Rlx6Q",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6JCLY0Rlx6Q?list=RD6JCLY0Rlx6Q" title="Walk the Moon - Shut Up and Dance (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 19,
+        "title": "Stolen Dance",
+        "artist": "Milky Chance",
+        "genre": "indie",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/iX-QaNzd-0Y/hqdefault.jpg",
+        "youtubeId": "iX-QaNzd-0Y",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/iX-QaNzd-0Y?list=RDiX-QaNzd-0Y" title="Milky Chance - Stolen Dance (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 20,
+        "title": "Roses",
+        "artist": "The Chainsmokers ft. ROZES",
+        "genre": "electronic",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/FyASdjZE0R0/hqdefault.jpg",
+        "youtubeId": "FyASdjZE0R0",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/FyASdjZE0R0?list=RDFyASdjZE0R0" title="The Chainsmokers - Roses (feat. ROZES) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 21,
+        "title": "Blade",
+        "artist": "NicJohnston",
+        "genre": "electronic",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/n_F8JsQvWCI/hqdefault.jpg",
+        "youtubeId": "n_F8JsQvWCI",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/n_F8JsQvWCI?list=RDJOMgQxJUaOc" title="The Chainsmokers - Don\'t Let Me Down (feat. Daya) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 22,
+        "title": "Closer",
+        "artist": "The Chainsmokers ft. Halsey",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/PT2_F-1esPk/hqdefault.jpg",
+        "youtubeId": "PT2_F-1esPk",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/PT2_F-1esPk?list=RDPT2_F-1esPk" title="The Chainsmokers - Closer (feat. Halsey) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 23,
+        "title": "Something Just Like This",
+        "artist": "The Chainsmokers & Coldplay",
+        "genre": "electronic",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/FM7MFYoylVs/hqdefault.jpg",
+        "youtubeId": "FM7MFYoylVs",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/FM7MFYoylVs?list=RDFM7MFYoylVs" title="The Chainsmokers & Coldplay - Something Just Like This (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 24,
+        "title": "Houdini",
+        "artist": "Dua Lipa",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/suAR1PYFNYA/hqdefault.jpg",
+        "youtubeId": "suAR1PYFNYA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/suAR1PYFNYA?list=RDzijd6Vy3jlw" title="The Chainsmokers - Paris (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 25,
+        "title": "Set Me Free",
+        "artist": "Rick Wayne",
+        "genre": "electronic",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/2n4II5XAoI4/hqdefault.jpg",
+        "youtubeId": "2n4II5XAoI4",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/2n4II5XAoI4?list=RD2takfLp1m8E" title="The Chainsmokers - All We Know (feat. Phoebe Ryan) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 26,
+        "title": "Wake Me Up",
+        "artist": "Avicii ft. Aloe Blacc",
+        "genre": "electronic",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/IcrbM1l_BoI/hqdefault.jpg",
+        "youtubeId": "IcrbM1l_BoI",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/IcrbM1l_BoI?list=RDIcrbM1l_BoI" title="Avicii - Wake Me Up (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 27,
+        "title": "The Nights",
+        "artist": "Avicii",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/UtF6Jej8yb4/hqdefault.jpg",
+        "youtubeId": "UtF6Jej8yb4",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/UtF6Jej8yb4?list=RDUtF6Jej8yb4" title="Avicii - The Nights (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 28,
+        "title": "Waiting For Love",
+        "artist": "Avicii",
+        "genre": "electronic",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/cHHLHGNpCSA/hqdefault.jpg",
+        "youtubeId": "cHHLHGNpCSA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/cHHLHGNpCSA?list=RDcHHLHGNpCSA" title="Avicii - Waiting For Love (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 29,
+        "title": "Hey Mama",
+        "artist": "David Guetta ft. Bebe Rexha, Nicki Minaj & Afrojack",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/bWXazVhlyxQ/hqdefault.jpg",
+        "youtubeId": "bWXazVhlyxQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/bWXazVhlyxQ?list=RD bWXazVhlyxQ" title="David Guetta - Hey Mama (feat. Bebe Rexha, Nicki Minaj & Afrojack) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 30,
+        "title": "Turn Down for What",
+        "artist": "DJ Snake & Lil Jon",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/HMUDVMiITOU/hqdefault.jpg",
+        "youtubeId": "HMUDVMiITOU",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/HMUDVMiITOU?list=RDHMUDVMiITOU" title="DJ Snake & Lil Jon - Turn Down for What (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 31,
+        "title": "Middle",
+        "artist": "DJ Snake ft. Bipolar Sunshine",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/mOKqNxN4jWM/hqdefault.jpg",
+        "youtubeId": "mOKqNxN4jWM",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/mOKqNxN4jWM?list=RDmOKqNxN4jWM" title="DJ Snake - Middle (feat. Bipolar Sunshine) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 32,
+        "title": "PROSECCO",
+        "artist": "KKevin ft. Bruno",
+        "genre": "hip-hop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/sCtrOvKNI2o/hqdefault.jpg",
+        "youtubeId": "sCtrOvKNI2o",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/sCtrOvKNI2o?list=RDeuCqAq6BRa4" title="DJ Snake - Let Me Love You (feat. Justin Bieber) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 33,
+        "title": "NINTENDO",
+        "artist": "BRUNO",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/HVl7whxBCB0/hqdefault.jpg",
+        "youtubeId": "HVl7whxBCB0",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/HVl7whxBCB0?list=RD5j5iG6d2g8E" title="DJ Snake & AlunaGeorge - You Know You Like It (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 34,
+        "title": "HIGHEST IN THE ROOM",
+        "artist": "Travis Scott",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/tfSS1e3kYeo/hqdefault.jpg",
+        "youtubeId": "tfSS1e3kYeo",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/tfSS1e3kYeo?list=RD6V9s0K3TW4" title="Duke Dumont - Ocean Drive (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 35,
+        "title": "Pictures Of Me",
+        "artist": "FoarCass x Roof Rats ",
+        "genre": "electronic",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/_15lLrZdiXQ/hqdefault.jpg",
+        "youtubeId": "_15lLrZdiXQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/_15lLrZdiXQ?list=RD6V9s0K3TW4" title="Duke Dumont - Need U (100%) (feat. A*M*E) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 36,
+        "title": "LOW",
+        "artist": "KIDDA",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/WnE68Oe0Wqk/hqdefault.jpg",
+        "youtubeId": "WnE68Oe0Wqk",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/WnE68Oe0Wqk?list=RD4Oy2H0Eu3Ic" title="Faul & Wad Ad vs. Pnau - Changes (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 37,
+        "title": "Prayer in C",
+        "artist": "Lilly Wood & The Prick",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/fCcDvEPGtes/hqdefault.jpg",
+        "youtubeId": "fCcDvEPGtes",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/fCcDvEPGtes?list=RDfCcDvEPGtes" title="Lilly Wood & The Prick - Prayer in C (Robin Schulz Remix) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 38,
+        "title": "Waves",
+        "artist": "Robin Schulz ft. Mr. Probz",
+        "genre": "electronic",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/hTWKbfoikeg/hqdefault.jpg",
+        "youtubeId": "hTWKbfoikeg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/hTWKbfoikeg?list=RDhTWKbfoikeg" title="Robin Schulz - Waves (feat. Mr. Probz) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 39,
+        "title": "Without Me",
+        "artist": "Eminem",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/YVkUvmDQ3HY/hqdefault.jpg",
+        "youtubeId": "YVkUvmDQ3HY",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/YVkUvmDQ3HY?list=RD6V9s0K3TW4" title="Robin Schulz - Headlights (feat. Ilsey) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 40,
+        "title": "Abracadabra",
+        "artist": "Lady Gaga",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/vBynw9Isr28/hqdefault.jpg",
+        "youtubeId": "vBynw9Isr28",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/vBynw9Isr28?list=RD6V9s0K3TW4" title="Robin Schulz - Show Me Love (feat. J.U.D.G.E.) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 41,
+        "title": "Minecraft",
+        "artist": "Markus Persson",
+        "genre": "vibe",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/BqPgeWf8vNM/hqdefault.jpg",
+        "youtubeId": "BqPgeWf8vNM",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/BqPgeWf8vNM?list=RD6V9s0K3TW4" title="Robin Schulz - Sun Goes Down (feat. Jasmine Thompson) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 42,
+        "title": "50 Cent",
+        "artist": "Ayo Technology",
+        "genre": "rap",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/oxt33W6bIBA/hqdefault.jpg",
+        "youtubeId": "oxt33W6bIBA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/oxt33W6bIBA?list=RD6V9s0K3TW4" title="Robin Schulz - OK (feat. James Blunt) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 43,
+        "title": "A Deeper Love",
+        "artist": "Paul Luke",
+        "genre": "electronic",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/QzYqzK85Smg/hqdefault.jpg",
+        "youtubeId": "QzYqzK85Smg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/QzYqzK85Smg?list=RD6Uyu7Wq-VOs" title="Robin Schulz - Sugar (feat. Francesco Yates) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
     }
 ];
 
@@ -68,6 +523,14 @@ let currentSongIndex = 0;
 let isPlaying = false;
 let progressInterval;
 let userInteracted = false;
+let isShuffle = false;
+
+// Pagination Variables
+let currentPage = 1;
+const songsPerPage = 20;
+
+// Search Variables
+let searchQuery = '';
 
 // YouTube IFrame API Ready
 function onYouTubeIframeAPIReady() {
@@ -269,14 +732,78 @@ function stopProgressUpdate() {
 // Seek Progress
 function setProgress(e) {
     if (!youtubePlayer || !userInteracted) return;
-    
+
     const width = this.clientWidth;
     const clickX = e.offsetX;
-    
-    youtubePlayer.getDuration((duration) => {
+    const duration = youtubePlayer.getDuration();
+
+    if (duration > 0) {
         const seekTime = (clickX / width) * duration;
         youtubePlayer.seekTo(seekTime, true);
+        console.log('Seeking to:', seekTime, 'seconds');
+    }
+}
+
+// Toggle Shuffle
+function toggleShuffle() {
+    isShuffle = !isShuffle;
+    const shuffleBtn = document.getElementById('shuffle');
+    if (isShuffle) {
+        shuffleBtn.classList.add('active');
+        showToast('Shuffle mode enabled');
+    } else {
+        shuffleBtn.classList.remove('active');
+        showToast('Shuffle mode disabled');
+    }
+    console.log('🔀 Shuffle mode:', isShuffle ? 'ON' : 'OFF');
+}
+
+// Navigate to Page
+function navigateToPage(page) {
+    // Update navigation active state
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
     });
+    document.querySelector(`[data-page="${page}"]`).classList.add('active');
+
+    // Hide all pages
+    document.querySelectorAll('.music-section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show selected page
+    const pageElement = document.getElementById(`${page}-page`);
+    if (pageElement) {
+        pageElement.style.display = 'block';
+    }
+
+    // Update current page and song list
+    currentNavPage = page;
+    currentPage = 1; // Reset to first page
+    searchQuery = ''; // Clear search
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+
+    // Set song list based on page
+    switch (page) {
+        case 'home':
+            currentSongList = musicDatabase;
+            break;
+        case 'favorites':
+            currentSongList = musicDatabase.filter(song => appState.favorites.includes(song.id));
+            break;
+        case 'discover':
+            currentSongList = musicDatabase.filter(song => song.featured);
+            break;
+        case 'trending':
+            currentSongList = musicDatabase.filter(song => song.popular);
+            break;
+        default:
+            currentSongList = musicDatabase;
+    }
+
+    renderSongs();
+    console.log(`📄 Navigated to ${page} page`);
 }
 
 // Volume Control
@@ -285,7 +812,7 @@ function setVolume() {
     if (youtubePlayer && youtubePlayer.setVolume) {
         youtubePlayer.setVolume(volume);
     }
-    
+
     const volumeIcon = document.getElementById('volume-icon');
     if (volume == 0) {
         volumeIcon.classList.remove('fa-volume-up');
@@ -308,8 +835,17 @@ function nextSong() {
         showToast('Please click the page first!');
         return;
     }
-    
-    let nextIndex = (currentSongIndex + 1) % musicDatabase.length;
+
+    let nextIndex;
+    if (isShuffle) {
+        // Random song selection in shuffle mode
+        do {
+            nextIndex = Math.floor(Math.random() * musicDatabase.length);
+        } while (nextIndex === currentSongIndex && musicDatabase.length > 1);
+    } else {
+        nextIndex = (currentSongIndex + 1) % musicDatabase.length;
+    }
+
     console.log('⏭️ Next song:', musicDatabase[nextIndex].title);
     loadSong(nextIndex, isPlaying);
 }
@@ -320,8 +856,17 @@ function prevSong() {
         showToast('Please click the page first!');
         return;
     }
-    
-    let prevIndex = (currentSongIndex - 1 + musicDatabase.length) % musicDatabase.length;
+
+    let prevIndex;
+    if (isShuffle) {
+        // Random song selection for previous in shuffle mode
+        do {
+            prevIndex = Math.floor(Math.random() * musicDatabase.length);
+        } while (prevIndex === currentSongIndex && musicDatabase.length > 1);
+    } else {
+        prevIndex = (currentSongIndex - 1 + musicDatabase.length) % musicDatabase.length;
+    }
+
     console.log('⏮️ Previous song:', musicDatabase[prevIndex].title);
     loadSong(prevIndex, isPlaying);
 }
@@ -389,19 +934,92 @@ function createSongCard(song, index) {
     return songCard;
 }
 
-// Render Songs
+// Render Songs with Search and Pagination
 function renderSongs() {
-    const container = document.getElementById('home-songs');
+    const container = document.getElementById(`${currentNavPage}-songs`);
     if (!container) {
-        console.error('❌ home-songs container not found');
+        console.error(`❌ ${currentNavPage}-songs container not found`);
         return;
     }
-    
+
     container.innerHTML = '';
-    musicDatabase.forEach((song, index) => {
-        container.appendChild(createSongCard(song, index));
+
+    // Filter songs based on search query
+    let filteredSongs = currentSongList;
+    if (searchQuery.trim() !== '') {
+        const query = searchQuery.toLowerCase();
+        filteredSongs = currentSongList.filter(song =>
+            song.title.toLowerCase().includes(query) ||
+            song.artist.toLowerCase().includes(query) ||
+            song.genre.toLowerCase().includes(query)
+        );
+    }
+
+    // Paginate filtered results
+    const startIndex = (currentPage - 1) * songsPerPage;
+    const endIndex = startIndex + songsPerPage;
+    const songsToRender = filteredSongs.slice(startIndex, endIndex);
+
+    songsToRender.forEach((song, pageIndex) => {
+        const globalIndex = musicDatabase.indexOf(song); // Get original index for playback
+        container.appendChild(createSongCard(song, globalIndex));
     });
-    console.log('✅ Songs rendered:', musicDatabase.length);
+
+    console.log('✅ Songs rendered for page', currentPage, ':', songsToRender.length, 'filtered from', filteredSongs.length);
+
+    // Render pagination controls with filtered count
+    renderPagination(filteredSongs.length);
+}
+
+// Render Pagination Controls
+function renderPagination(totalSongs) {
+    const totalPages = Math.ceil(totalSongs / songsPerPage);
+    const paginationContainer = document.getElementById('pagination-controls');
+    if (!paginationContainer) return;
+
+    paginationContainer.innerHTML = '';
+
+    // Previous button
+    const prevBtn = document.createElement('button');
+    prevBtn.textContent = 'Előző';
+    prevBtn.className = 'pagination-btn';
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            renderSongs();
+        }
+    });
+    paginationContainer.appendChild(prevBtn);
+
+    // Page numbers (show max 5 pages around current)
+    const startPage = Math.max(1, currentPage - 2);
+    const endPage = Math.min(totalPages, currentPage + 2);
+
+    for (let i = startPage; i <= endPage; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.textContent = i;
+        pageBtn.className = 'pagination-btn';
+        if (i === currentPage) pageBtn.classList.add('active');
+        pageBtn.addEventListener('click', () => {
+            currentPage = i;
+            renderSongs();
+        });
+        paginationContainer.appendChild(pageBtn);
+    }
+
+    // Next button
+    const nextBtn = document.createElement('button');
+    nextBtn.textContent = 'Következő';
+    nextBtn.className = 'pagination-btn';
+    nextBtn.disabled = currentPage === totalPages;
+    nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            renderSongs();
+        }
+    });
+    paginationContainer.appendChild(nextBtn);
 }
 
 // Toast Notification
@@ -419,8 +1037,12 @@ function showToast(message) {
 const appState = {
     currentSongIndex: 0,
     isPlaying: false,
-    favorites: []
+    favorites: JSON.parse(localStorage.getItem('soundwave_favorites')) || []
 };
+
+// Navigation State
+let currentNavPage = 'home';
+let currentSongList = musicDatabase;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
@@ -448,11 +1070,32 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('play-pause').addEventListener('click', togglePlayPause);
     document.getElementById('next').addEventListener('click', nextSong);
     document.getElementById('prev').addEventListener('click', prevSong);
+    document.getElementById('shuffle').addEventListener('click', toggleShuffle);
     document.getElementById('progress-bar').addEventListener('click', setProgress);
     document.getElementById('volume-slider').addEventListener('input', setVolume);
     document.getElementById('player-favorite').addEventListener('click', () => {
         const currentSong = musicDatabase[currentSongIndex];
         toggleFavorite(currentSong.id);
+    });
+
+    // Search functionality
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            currentPage = 1; // Reset to first page on search
+            renderSongs();
+        });
+    }
+
+    // Navigation functionality
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const page = link.getAttribute('data-page');
+            navigateToPage(page);
+        });
     });
     
     // Default volume
