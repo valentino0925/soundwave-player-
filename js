@@ -39,7 +39,7 @@ const musicDatabase = [
         "id": 4,
         "title": "SAD!",
         "artist": "XXXTENTACION",
-        "genre": "hip-hop",
+        "genre": "hip-hop", 
         "mood": "emotional",
         "cover": "https://i.ytimg.com/vi/pgN-vvVVxMA/maxresdefault.jpg",
         "youtubeId": "pgN-vvVVxMA",
@@ -514,16 +514,388 @@ const musicDatabase = [
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/QzYqzK85Smg?list=RD6Uyu7Wq-VOs" title="Robin Schulz - Sugar (feat. Francesco Yates) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
         "popular": true
-    }
+    },
+    {
+        "id": 44,
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/4NRXx6U8ABQ/hqdefault.jpg",
+        "youtubeId": "4NRXx6U8ABQ",
+        "embedCode": 'iframe width="1296" height="729" src="https://www.youtube.com/embed/4NRXx6U8ABQ?list=RD4NRXx6U8ABQ" title="Blinding Lights (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 45,
+        "title": "Watermelon Sugar",
+        "artist": "Harry Styles",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/E07s5ZYygMg/hqdefault.jpg",
+        "youtubeId": "E07s5ZYygMg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/E07s5ZYygMg?list=RDE07s5ZYygMg" title="Watermelon Sugar (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 46,
+        "title": "Good 4 U",
+        "artist": "Olivia Rodrigo",
+        "genre": "pop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/gNi_6U5Pm_o/hqdefault.jpg",
+        "youtubeId": "gNi_6U5Pm_o",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/gNi_6U5Pm_o?list=RDgNi_6U5Pm_o" title="Good 4 U (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 47,
+        "title": "Peaches",
+        "artist": "Justin Bieber ft. Daniel Caesar & Giveon",
+        "genre": "pop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/tQ0yjYUFKAE/hqdefault.jpg",
+        "youtubeId": "tQ0yjYUFKAE",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/tQ0yjYUFKAE?list=RDtQ0yjYUFKAE" title="Peaches (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 48,
+        "title": "Friday (Ft Mufasa & Hypeman) (Powerhitz Radio Edit)",
+        "artist": "Riton & Nightcrawlers",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/4vMWQROHmao/hqdefault.jpg",
+        "youtubeId": "4vMWQROHmao",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/4vMWQROHmao" title="Montero (Call Me By Your Name) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 49,
+        "title": "Leave the Door Open",
+        "artist": "Silk Sonic (Bruno Mars & Anderson .Paak)",
+        "genre": "pop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/adLGHcj_fmA/hqdefault.jpg",
+        "youtubeId": "adLGHcj_fmA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/adLGHcj_fmA?list=RDadLGHcj_fmA" title="Leave the Door Open (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 50,
+        "title": "Drivers License",
+        "artist": "Olivia Rodrigo",
+        "genre": "pop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/ZmDBbnmKpqQ/hqdefault.jpg",
+        "youtubeId": "ZmDBbnmKpqQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/ZmDBbnmKpqQ?list=RDZmDBbnmKpqQ" title="Drivers License (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 51,
+        "title": "What's Next",
+        "artist": "Drake",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/6ha7uL-WiJQ/hqdefault.jpg",
+        "youtubeId": "6ha7uL-WiJQ",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6ha7uL-WiJQ?list=RD6ha7uL-WiJQ" title="What\'s Next (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 52,
+        "title": "Up",
+        "artist": "Cardi B",
+        "genre": "hip-hop",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/UceW2Z3Vzfo/hqdefault.jpg",
+        "youtubeId": "UceW2Z3Vzfo",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/UceW2Z3Vzfo?list=RDUceW2Z3Vzfo" title="Up (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 53,
+        "title": "Agartha",
+        "artist": "Ft Pintér Gergő meg Gyurik Áron",
+        "genre": "hip-hop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/MLQ9i8Xp5pU/hqdefault.jpg",
+        "youtubeId": "MLQ9i8Xp5pU",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/MLQ9i8Xp5pU?list=RDhpWiJ8cZqYk" title="What\'s Poppin (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 54,
+        "title": "Mood",
+        "artist": "24kGoldn ft. Iann Dior",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/GrAchTdepsU/hqdefault.jpg",
+        "youtubeId": "GrAchTdepsU",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/GrAchTdepsU?list=RDGrAchTdepsU" title="Mood (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 55,
+        "title": "Life Goes On",
+        "artist": "BTS",
+        "genre": "pop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/-5q5mZbe3V8/hqdefault.jpg",
+        "youtubeId": "-5q5mZbe3V8",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/-5q5mZbe3V8?list=RD-5q5mZbe3V8" title="Life Goes On (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 56,
+        "title": "Dynamite",
+        "artist": "BTS",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/gdZLi9oWNZg/hqdefault.jpg",
+        "youtubeId": "gdZLi9oWNZg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/gdZLi9oWNZg?list=RDgdZLi9oWNZg" title="Dynamite (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 57,
+        "title": "Butter",
+        "artist": "BTS",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/WMweEpGlu_U/hqdefault.jpg",
+        "youtubeId": "WMweEpGlu_U",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/WMweEpGlu_U?list=RDWMweEpGlu_U" title="Butter (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 58,
+        "title": "Permission to Dance",
+        "artist": "BTS",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/CuklIb9d3fI/hqdefault.jpg",
+        "youtubeId": "CuklIb9d3fI",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/CuklIb9d3fI?list=RDCuklIb9d3fI" title="Permission to Dance (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 59,
+        "title": "Stay",
+        "artist": "The Kid Laroi & Justin Bieber",
+        "genre": "pop",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/kTJczUoc26U/hqdefault.jpg",
+        "youtubeId": "kTJczUoc26U",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/kTJczUoc26U?list=RDkTJczUoc26U" title="Stay (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 60,
+        "title": "Industry Baby",
+        "artist": "Lil Nas X & Jack Harlow",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/UTHLKHL_whs/hqdefault.jpg",
+        "youtubeId": "UTHLKHL_whs",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/UTHLKHL_whs?list=RDUTHLKHL_whs" title="Industry Baby (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 61,
+        "title": "Way 2 Sexy",
+        "artist": "Drake ft. Future",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/9nI1qZtoyMg/hqdefault.jpg",
+        "youtubeId": "9nI1qZtoyMg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/9nI1qZtoyMg?list=RD9nI1qZtoyMg" title="Way 2 Sexy (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 62,
+        "title": "My Universe",
+        "artist": "Coldplay x BTS",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/xTx21AtzLMA/hqdefault.jpg",
+        "youtubeId": "xTx21AtzLMA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/xTx21AtzLMA?list=RDxTx21AtzLMA" title="My Universe (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 63,
+        "title": "Positions",
+        "artist": "Ariana Grande",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/tcYodQoapMg/hqdefault.jpg",
+        "youtubeId": "tcYodQoapMg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/tcYodQoapMg?list=RDtcYodQoapMg" title="Positions (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 64,
+        "title": "Mood Swings",
+        "artist": "Pop Smoke ft. Lil Tjay",
+        "genre": "hip-hop",
+        "mood": "intense",
+        "cover": "https://i.ytimg.com/vi/8dCB_-iUuDY/hqdefault.jpg",
+        "youtubeId": "8dCB_-iUuDY",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/8dCB_-iUuDY?list=RD8dCB_-iUuDY" title="Mood Swings (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 65,
+        "title": "For The Night",
+        "artist": "Pop Smoke ft. Lil Baby & DaBaby",
+        "genre": "hip-hop",
+        "mood": "chill",
+        "cover": "https://i.ytimg.com/vi/Q9pjm4cNsfc/hqdefault.jpg",
+        "youtubeId": "Q9pjm4cNsfc",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/Q9pjm4cNsfc?list=RDQ9pjm4cNsfc" title="For The Night (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 66,
+        "title": "Savage Love (Laxed – Siren Beat)",
+        "artist": "Jawsh 685 & Jason Derulo",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/JtNDrAuHQqE/hqdefault.jpg",
+        "youtubeId": "JtNDrAuHQqE",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/JtNDrAuHQqE?list=RDJtNDrAuHQqE" title="Savage Love (Laxed – Siren Beat) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 67,
+        "title": "Roses",
+        "artist": "SAINt JHN",
+        "genre": "electronic",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/ei3K0I8pF5c/hqdefault.jpg",
+        "youtubeId": "ei3K0I8pF5c",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/ei3K0I8pF5c?list=RDei3K0I8pF5c" title="Roses (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 68,
+        "title": "Don't Start Now",
+        "artist": "Dua Lipa",
+        "genre": "pop",
+        "mood": "upbeat",
+        "cover": "https://i.ytimg.com/vi/JxGjEvGItnA/hqdefault.jpg",
+        "youtubeId": "JxGjEvGItnA",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/JxGjEvGItnA?list=RDJxGjEvGItnA" title="Don\'t Start Now (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 69,
+        "title": "Physical",
+        "artist": "Dua Lipa",
+        "genre": "pop",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/9HDEHj2yzew/hqdefault.jpg",
+        "youtubeId": "9HDEHj2yzew",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/9HDEHj2yzew?list=RD9HDEHj2yzew" title="Physical (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 70,
+        "title": "Break My Soul",
+        "artist": "Beyoncé",
+        "genre": "pop",
+        "mood": "energetic",
+        "cover": "https://i.ytimg.com/vi/hsm4poTWjMs/hqdefault.jpg",
+        "youtubeId": "hsm4poTWjMs",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/hsm4poTWjMs?list=RDhsm4poTWjMs" title="Break My Soul (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 71,
+        "title": "All Too Well (10 Minute Version)",
+        "artist": "Taylor Swift",
+        "genre": "indie",
+        "mood": "emotional",
+        "cover": "https://i.ytimg.com/vi/tJlW0k5hFF8/hqdefault.jpg",
+        "youtubeId": "tJlW0k5hFF8",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/tJlW0k5hFF8?list=RDtJlW0k5hFF8" title="All Too Well (10 Minute Version) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 72,
+        "title": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "genre": "pop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/b1kbLwvqugk/hqdefault.jpg",
+        "youtubeId": "b1kbLwvqugk",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/b1kbLwvqugk?list=RD b1kbLwvqugk" title="Anti-Hero (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
+    {
+        "id": 73,
+        "title": "Unholy",
+        "artist": "Sam Smith & Kim Petras",
+        "genre": "pop",
+        "mood": "intense",
+        "cover": "https://i.ytimg.com/vi/Uq9gPaIzbe8/hqdefault.jpg",
+        "youtubeId": "Uq9gPaIzbe8",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/Uq9gPaIzbe8?list=RDUq9gPaIzbe8" title="Unholy (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": false,
+        "popular": true
+    },
+    {
+        "id": 74,
+        "title": "It's Beginning To Look A Lot Like Christmas",
+        "artist": "Michael Bublé",
+        "genre": "hip-hop",
+        "mood": "fun",
+        "cover": "https://i.ytimg.com/vi/QJ5DOWPGxwg/hqdefault.jpg",
+        "youtubeId": "QJ5DOWPGxwg",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/QJ5DOWPGxwg" title="Montero (Call Me By Your Name) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "featured": true,
+        "popular": true
+    },
 ];
 
 // YouTube Player Variables
 let youtubePlayer;
-let currentSongIndex = 0;
-let isPlaying = false;
-let progressInterval;
-let userInteracted = false;
-let isShuffle = false;
+let currentSongIndex = 0
+let isPlaying = false
+let progressInterval
+let userInteracted = false
+let isShuffle = false
 
 // Pagination Variables
 let currentPage = 1;
