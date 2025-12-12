@@ -9,7 +9,8 @@ const musicDatabase = [
         "youtubeId": "TUVcZfQe-Kw",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/TUVcZfQe-Kw?list=RDTUVcZfQe-Kw" title="Dua Lipa - Levitating Featuring DaBaby (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 2100000000
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@ const musicDatabase = [
         "youtubeId": "6ONRf7h3Mdk",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6ONRf7h3Mdk?list=RD6ONRf7h3Mdk" title="Travis Scott - SICKO MODE (Official Video) ft. Drake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 2200000000
     },
     {
         "id": 3,
@@ -39,13 +41,14 @@ const musicDatabase = [
         "id": 4,
         "title": "SAD!",
         "artist": "XXXTENTACION",
-        "genre": "hip-hop", 
+        "genre": "hip-hop",
         "mood": "emotional",
         "cover": "https://i.ytimg.com/vi/pgN-vvVVxMA/maxresdefault.jpg",
         "youtubeId": "pgN-vvVVxMA",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/pgN-vvVVxMA?list=RDpgN-vvVVxMA" title="XXXTENTACION - SAD!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 2000000000
     },
     {
         "id": 5,
@@ -69,7 +72,8 @@ const musicDatabase = [
         "youtubeId": "9bZkp7q19f0",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/yDiXQl7X0UY?list=RDyDiXQl7X0UY" title="Steve Aoki, Chris Lake & Tujamo - Boneless (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
-        "popular": true
+        "popular": true,
+        "views": 4800000000
     },
     {
         "id": 7,
@@ -81,7 +85,8 @@ const musicDatabase = [
         "youtubeId": "YqeW9_5kURI",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/YqeW9_5kURI?list=RDYqeW9_5kURI" title="Major Lazer & DJ Snake - Lean On (feat. MØ) (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 3200000000
     },
     {
         "id": 8,
@@ -129,7 +134,8 @@ const musicDatabase = [
         "youtubeId": "nfs8NYg7yQM",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/nfs8NYg7yQM?list=RD6Uyu7Wq-VOs" title="Jonas Blue - Fast Car (feat. Dakota) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 2100000000
     },
     {
         "id": 12,
@@ -153,7 +159,8 @@ const musicDatabase = [
         "youtubeId": "zvCBSSwgtg4",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/zvCBSSwgtg4?list=RDzvCBSSwgtg4" title="The Lumineers - Ho Hey (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 14,
@@ -177,7 +184,8 @@ const musicDatabase = [
         "youtubeId": "SDTZ7iX4vTQ",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/SDTZ7iX4vTQ?list=RDSDTZ7iX4vTQ" title="Foster The People - Pumped Up Kicks (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 16,
@@ -225,7 +233,8 @@ const musicDatabase = [
         "youtubeId": "iX-QaNzd-0Y",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/iX-QaNzd-0Y?list=RDiX-QaNzd-0Y" title="Milky Chance - Stolen Dance (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 20,
@@ -249,7 +258,8 @@ const musicDatabase = [
         "youtubeId": "n_F8JsQvWCI",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/n_F8JsQvWCI?list=RDJOMgQxJUaOc" title="The Chainsmokers - Don\'t Let Me Down (feat. Daya) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 210000000
     },
     {
         "id": 22,
@@ -297,7 +307,8 @@ const musicDatabase = [
         "youtubeId": "2n4II5XAoI4",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/2n4II5XAoI4?list=RD2takfLp1m8E" title="The Chainsmokers - All We Know (feat. Phoebe Ryan) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 210000000
     },
     {
         "id": 26,
@@ -321,7 +332,8 @@ const musicDatabase = [
         "youtubeId": "UtF6Jej8yb4",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/UtF6Jej8yb4?list=RDUtF6Jej8yb4" title="Avicii - The Nights (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 28,
@@ -345,7 +357,8 @@ const musicDatabase = [
         "youtubeId": "bWXazVhlyxQ",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/bWXazVhlyxQ?list=RD bWXazVhlyxQ" title="David Guetta - Hey Mama (feat. Bebe Rexha, Nicki Minaj & Afrojack) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 3200000000
     },
     {
         "id": 30,
@@ -441,7 +454,8 @@ const musicDatabase = [
         "youtubeId": "fCcDvEPGtes",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/fCcDvEPGtes?list=RDfCcDvEPGtes" title="Lilly Wood & The Prick - Prayer in C (Robin Schulz Remix) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 38,
@@ -549,7 +563,8 @@ const musicDatabase = [
         "youtubeId": "gNi_6U5Pm_o",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/gNi_6U5Pm_o?list=RDgNi_6U5Pm_o" title="Good 4 U (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1300000000
     },
     {
         "id": 47,
@@ -573,7 +588,8 @@ const musicDatabase = [
         "youtubeId": "4vMWQROHmao",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/4vMWQROHmao" title="Montero (Call Me By Your Name) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 210000000
     },
     {
         "id": 49,
@@ -597,17 +613,18 @@ const musicDatabase = [
         "youtubeId": "ZmDBbnmKpqQ",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/ZmDBbnmKpqQ?list=RDZmDBbnmKpqQ" title="Drivers License (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1500000000
     },
     {
         "id": 51,
-        "title": "What's Next",
-        "artist": "Drake",
-        "genre": "hip-hop",
+        "title": "ночной плейлист",
+        "artist": "Discovery Music",
+        "genre": "All",
         "mood": "chill",
-        "cover": "https://i.ytimg.com/vi/6ha7uL-WiJQ/hqdefault.jpg",
-        "youtubeId": "6ha7uL-WiJQ",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/6ha7uL-WiJQ?list=RD6ha7uL-WiJQ" title="What\'s Next (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/IwUw40DsZLM/hqdefault.jpg",
+        "youtubeId": "IwUw40DsZLM",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/IwUw40DsZLM?list=RD6ha7uL-WiJQ" title="What\'s Next (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
         "popular": true
     },
@@ -705,7 +722,8 @@ const musicDatabase = [
         "youtubeId": "kTJczUoc26U",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/kTJczUoc26U?list=RDkTJczUoc26U" title="Stay (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
-        "popular": true
+        "popular": true,
+        "views": 3200000000
     },
     {
         "id": 60,
@@ -721,75 +739,76 @@ const musicDatabase = [
     },
     {
         "id": 61,
-        "title": "Way 2 Sexy",
-        "artist": "Drake ft. Future",
+        "title": "VASOVSKI LIVE - REPRESENT CUBA (ROBxDAN REMIX)",
+        "artist": "LoveStyle Records",
         "genre": "hip-hop",
         "mood": "chill",
-        "cover": "https://i.ytimg.com/vi/9nI1qZtoyMg/hqdefault.jpg",
-        "youtubeId": "9nI1qZtoyMg",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/9nI1qZtoyMg?list=RD9nI1qZtoyMg" title="Way 2 Sexy (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/oImL3S6n-_U/hqdefault.jpg",
+        "youtubeId": "oImL3S6n-_U",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/oImL3S6n-_U?list=RD9nI1qZtoyMg" title="Way 2 Sexy (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
         "popular": true
     },
     {
         "id": 62,
-        "title": "My Universe",
-        "artist": "Coldplay x BTS",
+        "title": "CHRSTPHR - MAMI",
+        "artist": "CHRSTPHR",
         "genre": "pop",
         "mood": "upbeat",
-        "cover": "https://i.ytimg.com/vi/xTx21AtzLMA/hqdefault.jpg",
-        "youtubeId": "xTx21AtzLMA",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/xTx21AtzLMA?list=RDxTx21AtzLMA" title="My Universe (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/d3q7LxeX4Rs/hqdefault.jpg",
+        "youtubeId": "d3q7LxeX4Rs",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/d3q7LxeX4Rs?list=RDxTx21AtzLMA" title="My Universe (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
         "popular": true
     },
     {
         "id": 63,
-        "title": "Positions",
-        "artist": "Ariana Grande",
+        "title": "Tiësto & Ava Max - The Motto REMIX (Riminirs remix) CAR MUSIC",
+        "artist": "RiminirsMusic",
         "genre": "pop",
         "mood": "upbeat",
-        "cover": "https://i.ytimg.com/vi/tcYodQoapMg/hqdefault.jpg",
-        "youtubeId": "tcYodQoapMg",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/tcYodQoapMg?list=RDtcYodQoapMg" title="Positions (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/m9puWoq3_zM/hqdefault.jpg",
+        "youtubeId": "m9puWoq3_zM",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/m9puWoq3_zM?list=RDtcYodQoapMg" title="Positions (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
         "popular": true
     },
     {
         "id": 64,
-        "title": "Mood Swings",
-        "artist": "Pop Smoke ft. Lil Tjay",
+        "title": "Coolio - Gangsta's Paradise (feat. L.V.) [Hivatalos videoklip]",
+        "artist": "Tommy Boy",
         "genre": "hip-hop",
         "mood": "intense",
-        "cover": "https://i.ytimg.com/vi/8dCB_-iUuDY/hqdefault.jpg",
-        "youtubeId": "8dCB_-iUuDY",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/8dCB_-iUuDY?list=RD8dCB_-iUuDY" title="Mood Swings (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/fPO76Jlnz6c/hqdefault.jpg",
+        "youtubeId": "fPO76Jlnz6c",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/fPO76Jlnz6c?list=RD8dCB_-iUuDY" title="Mood Swings (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
         "popular": true
     },
     {
         "id": 65,
-        "title": "For The Night",
-        "artist": "Pop Smoke ft. Lil Baby & DaBaby",
+        "title": "Ariana Grande - 7 rings (Official Video)",
+        "artist": "Ariana Grande",
         "genre": "hip-hop",
         "mood": "chill",
-        "cover": "https://i.ytimg.com/vi/Q9pjm4cNsfc/hqdefault.jpg",
-        "youtubeId": "Q9pjm4cNsfc",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/Q9pjm4cNsfc?list=RDQ9pjm4cNsfc" title="For The Night (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/QYh6mYIJG2Y/hqdefault.jpg",
+        "youtubeId": "QYh6mYIJG2Y",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/QYh6mYIJG2Y?list=RDQ9pjm4cNsfc" title="For The Night (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": false,
         "popular": true
     },
     {
         "id": 66,
-        "title": "Savage Love (Laxed – Siren Beat)",
-        "artist": "Jawsh 685 & Jason Derulo",
+        "title": "BRUNO x Mollywood - AFTERPARTY (Official Music Video)",
+        "artist": "BSS Boyz és mollywood",
         "genre": "pop",
         "mood": "upbeat",
-        "cover": "https://i.ytimg.com/vi/JtNDrAuHQqE/hqdefault.jpg",
-        "youtubeId": "JtNDrAuHQqE",
-        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/JtNDrAuHQqE?list=RDJtNDrAuHQqE" title="Savage Love (Laxed – Siren Beat) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        "cover": "https://i.ytimg.com/vi/EePoS6COqYs/hqdefault.jpg",
+        "youtubeId": "EePoS6COqYs",
+        "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/EePoS6COqYsE?list=RDJtNDrAuHQqE" title="Savage Love (Laxed – Siren Beat) (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 67,
@@ -813,7 +832,8 @@ const musicDatabase = [
         "youtubeId": "JxGjEvGItnA",
         "embedCode": '<iframe width="1296" height="729" src="https://www.youtube.com/embed/JxGjEvGItnA?list=RDJxGjEvGItnA" title="Don\'t Start Now (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         "featured": true,
-        "popular": true
+        "popular": true,
+        "views": 1200000000
     },
     {
         "id": 69,
@@ -1088,6 +1108,18 @@ function formatTime(seconds) {
     return `${min}:${sec < 10 ? '0' + sec : sec}`;
 }
 
+// Format Views
+function formatViews(views) {
+    if (views >= 1000000000) {
+        return (views / 1000000000).toFixed(1) + 'B';
+    } else if (views >= 1000000) {
+        return (views / 1000000).toFixed(1) + 'M';
+    } else if (views >= 1000) {
+        return (views / 1000).toFixed(1) + 'K';
+    }
+    return views.toString();
+}
+
 // Progress Interval
 function startProgressUpdate() {
     stopProgressUpdate();
@@ -1132,6 +1164,8 @@ function toggleShuffle() {
 
 // Navigate to Page
 function navigateToPage(page) {
+    console.log(`🔄 Navigating to page: ${page}`);
+
     // Update navigation active state
     document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
@@ -1147,6 +1181,9 @@ function navigateToPage(page) {
     const pageElement = document.getElementById(`${page}-page`);
     if (pageElement) {
         pageElement.style.display = 'block';
+        console.log(`✅ Page ${page} displayed`);
+    } else {
+        console.error(`❌ Page element ${page}-page not found`);
     }
 
     // Update current page and song list
@@ -1160,15 +1197,20 @@ function navigateToPage(page) {
     switch (page) {
         case 'home':
             currentSongList = musicDatabase;
+            console.log(`🏠 Home page: ${currentSongList.length} songs`);
             break;
         case 'favorites':
             currentSongList = musicDatabase.filter(song => appState.favorites.includes(song.id));
+            console.log(`❤️ Favorites page: ${currentSongList.length} songs`);
             break;
         case 'discover':
-            currentSongList = musicDatabase.filter(song => song.featured);
-            break;
+            filterDiscoverSongs(currentDiscoverCategory);
+            return; // filterDiscoverSongs handles rendering
         case 'trending':
-            currentSongList = musicDatabase.filter(song => song.popular);
+            // Show songs with over 20 million YouTube views, sorted by views descending
+            currentSongList = musicDatabase.filter(song => song.views && song.views > 20000000)
+                .sort((a, b) => b.views - a.views);
+            console.log(`🔥 Trending page: ${currentSongList.length} songs`);
             break;
         default:
             currentSongList = musicDatabase;
@@ -1265,11 +1307,14 @@ function toggleFavorite(songId) {
 // Create Song Card
 function createSongCard(song, index) {
     const isFavorite = appState.favorites.includes(song.id);
-    
+
+    // Format views for display
+    const viewsText = song.views ? formatViews(song.views) : '';
+
     const songCard = document.createElement('div');
     songCard.className = 'song-card';
     songCard.setAttribute('data-id', song.id);
-    
+
     songCard.innerHTML = `
         <img src="${song.cover}" alt="${song.title}" class="album-cover">
         <div class="song-actions">
@@ -1278,6 +1323,7 @@ function createSongCard(song, index) {
         <div class="song-card-content">
             <div class="song-card-title">${song.title}</div>
             <div class="song-card-artist">${song.artist}</div>
+            ${currentNavPage === 'trending' && viewsText ? `<div class="song-views">${viewsText} views</div>` : ''}
         </div>
     `;
     
@@ -1325,6 +1371,15 @@ function renderSongs() {
             song.artist.toLowerCase().includes(query) ||
             song.genre.toLowerCase().includes(query)
         );
+    }
+
+    // Handle empty state for favorites
+    if (currentNavPage === 'favorites' && filteredSongs.length === 0) {
+        document.getElementById('favorites-empty').style.display = 'block';
+        renderPagination(0);
+        return;
+    } else {
+        document.getElementById('favorites-empty').style.display = 'none';
     }
 
     // Paginate filtered results
@@ -1409,12 +1464,254 @@ function showToast(message) {
 const appState = {
     currentSongIndex: 0,
     isPlaying: false,
-    favorites: JSON.parse(localStorage.getItem('soundwave_favorites')) || []
+    favorites: JSON.parse(localStorage.getItem('soundwave_favorites')) || [],
+    playlists: JSON.parse(localStorage.getItem('soundwave_playlists')) || []
 };
+
+// Playlist Functions
+function showCreatePlaylistModal() {
+    const modal = document.getElementById('create-playlist-modal');
+    modal.style.display = 'block';
+    document.getElementById('playlist-name').value = '';
+    document.getElementById('playlist-description').value = '';
+}
+
+function hideCreatePlaylistModal() {
+    const modal = document.getElementById('create-playlist-modal');
+    modal.style.display = 'none';
+}
+
+function savePlaylist() {
+    const name = document.getElementById('playlist-name').value.trim();
+    const description = document.getElementById('playlist-description').value.trim();
+
+    if (!name) {
+        showToast('Please enter a playlist name');
+        return;
+    }
+
+    const newPlaylist = {
+        id: Date.now().toString(),
+        name: name,
+        description: description,
+        songs: [],
+        createdAt: new Date().toISOString()
+    };
+
+    appState.playlists.push(newPlaylist);
+    savePlaylistsToStorage();
+    renderPlaylists();
+    hideCreatePlaylistModal();
+    showToast(`Playlist "${name}" created!`);
+}
+
+function savePlaylistsToStorage() {
+    localStorage.setItem('soundwave_playlists', JSON.stringify(appState.playlists));
+}
+
+function renderPlaylists() {
+    const playlistList = document.getElementById('playlist-list');
+    playlistList.innerHTML = '';
+
+    appState.playlists.forEach(playlist => {
+        const playlistItem = document.createElement('li');
+        playlistItem.setAttribute('data-playlist', playlist.id);
+        playlistItem.innerHTML = `
+            ${playlist.name}
+            <div class="playlist-actions">
+                <i class="fas fa-play" title="Play"></i>
+                <i class="fas fa-edit" title="Edit"></i>
+                <i class="fas fa-trash" title="Delete"></i>
+            </div>
+        `;
+
+        // Add event listeners
+        const playBtn = playlistItem.querySelector('.fa-play');
+        const editBtn = playlistItem.querySelector('.fa-edit');
+        const deleteBtn = playlistItem.querySelector('.fa-trash');
+
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            playPlaylist(playlist.id);
+        });
+
+        editBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            editPlaylist(playlist.id);
+        });
+
+        deleteBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            deletePlaylist(playlist.id);
+        });
+
+        playlistItem.addEventListener('click', () => {
+            showPlaylistDetails(playlist.id);
+        });
+
+        playlistList.appendChild(playlistItem);
+    });
+}
+
+function playPlaylist(playlistId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (playlist && playlist.songs.length > 0) {
+        // Set current song list to playlist songs
+        currentSongList = playlist.songs.map(songId =>
+            musicDatabase.find(song => song.id === songId)
+        ).filter(song => song); // Filter out any null songs
+
+        currentPage = 1;
+        currentNavPage = 'playlist';
+        renderSongs();
+        showToast(`Playing playlist: ${playlist.name}`);
+    } else {
+        showToast('This playlist is empty');
+    }
+}
+
+function editPlaylist(playlistId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (playlist) {
+        const newName = prompt('Enter new playlist name:', playlist.name);
+        if (newName && newName.trim()) {
+            playlist.name = newName.trim();
+            savePlaylistsToStorage();
+            renderPlaylists();
+            showToast('Playlist updated');
+        }
+    }
+}
+
+function deletePlaylist(playlistId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (playlist && confirm(`Delete playlist "${playlist.name}"?`)) {
+        appState.playlists = appState.playlists.filter(p => p.id !== playlistId);
+        savePlaylistsToStorage();
+        renderPlaylists();
+        showToast('Playlist deleted');
+    }
+}
+
+function showPlaylistDetails(playlistId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (!playlist) return;
+
+    // Hide all pages
+    document.querySelectorAll('.music-section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show playlist details
+    const playlistDetails = document.getElementById('playlist-details');
+    playlistDetails.style.display = 'block';
+
+    document.getElementById('playlist-details-title').textContent = playlist.name;
+
+    const playlistSongs = document.getElementById('playlist-songs');
+    playlistSongs.innerHTML = '';
+
+    if (playlist.songs.length === 0) {
+        document.getElementById('playlist-empty').style.display = 'block';
+    } else {
+        document.getElementById('playlist-empty').style.display = 'none';
+
+        playlist.songs.forEach(songId => {
+            const song = musicDatabase.find(s => s.id === songId);
+            if (song) {
+                const songItem = document.createElement('li');
+                songItem.innerHTML = `
+                    <div class="playlist-song-info">
+                        <img src="${song.cover}" alt="${song.title}" class="playlist-song-cover">
+                        <div class="playlist-song-details">
+                            <div class="playlist-song-title">${song.title}</div>
+                            <div class="playlist-song-artist">${song.artist}</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-times remove-song" title="Remove from playlist"></i>
+                `;
+
+                songItem.querySelector('.remove-song').addEventListener('click', () => {
+                    removeSongFromPlaylist(playlistId, songId);
+                });
+
+                songItem.addEventListener('click', (e) => {
+                    if (!e.target.closest('.remove-song')) {
+                        const globalIndex = musicDatabase.indexOf(song);
+                        loadSong(globalIndex, true);
+                    }
+                });
+
+                playlistSongs.appendChild(songItem);
+            }
+        });
+    }
+}
+
+function removeSongFromPlaylist(playlistId, songId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (playlist) {
+        playlist.songs = playlist.songs.filter(id => id !== songId);
+        savePlaylistsToStorage();
+        showPlaylistDetails(playlistId);
+        showToast('Song removed from playlist');
+    }
+}
+
+function addSongToPlaylist(songId, playlistId) {
+    const playlist = appState.playlists.find(p => p.id === playlistId);
+    if (playlist && !playlist.songs.includes(songId)) {
+        playlist.songs.push(songId);
+        savePlaylistsToStorage();
+        showToast(`Added to ${playlist.name}`);
+    }
+}
 
 // Navigation State
 let currentNavPage = 'home';
 let currentSongList = musicDatabase;
+let currentDiscoverCategory = 'featured';
+
+// Filter Discover Songs by Category
+function filterDiscoverSongs(category) {
+    currentDiscoverCategory = category;
+
+    // Update active tab
+    document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+    // Filter songs based on category
+    switch (category) {
+        case 'featured':
+            // Randomize songs from home tab (all songs)
+            currentSongList = [...musicDatabase].sort(() => Math.random() - 0.5);
+            break;
+        case 'playlisted':
+            // For now, show songs that are popular (could be extended to actual playlists)
+            currentSongList = musicDatabase.filter(song => song.popular);
+            break;
+        case 'popular':
+            currentSongList = musicDatabase.filter(song => song.popular);
+            break;
+        case 'new':
+            // Show recent songs (last 20 added)
+            currentSongList = musicDatabase.slice(-20);
+            break;
+        case 'mood':
+            // Show songs with mood property
+            currentSongList = musicDatabase.filter(song => song.mood);
+            break;
+        default:
+            // Default to randomized songs from home tab
+            currentSongList = [...musicDatabase].sort(() => Math.random() - 0.5);
+    }
+
+    currentPage = 1; // Reset to first page
+    renderSongs();
+    console.log(`🔍 Filtered discover songs by category: ${category}`);
+}
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
@@ -1464,18 +1761,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
             const page = link.getAttribute('data-page');
             navigateToPage(page);
         });
     });
-    
+
+    // Discover tabs functionality
+    const discoverTabs = document.querySelectorAll('.category-tab');
+    discoverTabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            const category = tab.getAttribute('data-category');
+            filterDiscoverSongs(category);
+        });
+    });
+
+    // Playlist functionality
+    document.getElementById('create-playlist-btn').addEventListener('click', showCreatePlaylistModal);
+    document.getElementById('save-playlist').addEventListener('click', savePlaylist);
+    document.getElementById('cancel-playlist').addEventListener('click', hideCreatePlaylistModal);
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', hideCreatePlaylistModal);
+    });
+
+    // Initialize playlists
+    renderPlaylists();
+
     // Default volume
     document.getElementById('volume-slider').value = 0.7;
     setVolume();
-    
+
     // Render songs
+    console.log('🚀 Initial render starting...');
     renderSongs();
-    
+
     console.log('🎵 SoundWave ready! First click the page, then click songs.');
 });
