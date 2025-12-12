@@ -17,10 +17,10 @@
             </div>
             
             <ul class="nav-links">
-                <li><a href="#" class="active nav-link" data-page="home"><i class="fas fa-home"></i>Kezdőlap</a></li>
-                <li><a href="#" class="nav-link" data-page="discover"><i class="fas fa-compass"></i>Felfedezés</a></li>
-                <li><a href="#" class="nav-link" data-page="trending"><i class="fas fa-fire"></i>Trend</a></li>
-                <li><a href="#" class="nav-link" data-page="favorites"><i class="fas fa-heart"></i>Kedvencek</a></li>
+                <li><div class="active nav-link" data-page="home"><i class="fas fa-home"></i>Kezdőlap</div></li>
+                <li><div class="nav-link" data-page="discover"><i class="fas fa-compass"></i>Felfedezés</div></li>
+                <li><div class="nav-link" data-page="trending"><i class="fas fa-fire"></i>Trend</div></li>
+                <li><div class="nav-link" data-page="favorites"><i class="fas fa-heart"></i>Kedvencek</div></li>
             </ul>
             
             <div class="playlist-section">
@@ -29,26 +29,7 @@
                     <i class="fas fa-plus" id="create-playlist-btn"></i>
                 </div>
                 <ul class="playlist-list" id="playlist-list">
-                    <li data-playlist="favorites">
-                        Kedvencek
-                        <div class="playlist-actions">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </li>
-                    <li data-playlist="hiphop">
-                        Hip-Hop
-                        <div class="playlist-actions">
-                            <i class="fas fa-play"></i>
-                            <i class="fas fa-edit"></i>
-                        </div>
-                    </li>
-                    <li data-playlist="pop">
-                        Pop
-                        <div class="playlist-actions">
-                            <i class="fas fa-play"></i>
-                            <i class="fas fa-edit"></i>
-                        </div>
-                    </li>
+                    <!-- User-created playlists will be added here -->
                 </ul>
             </div>
         </div>
@@ -69,17 +50,7 @@
                 </div>
             </div>
             
-            <!-- Banner -->
-            <div class="banner">
-                <div class="banner-content">
-                    <h2>YouTube Music Streaming</h2>
-                    <p>Hallgass zene közvetlenül YouTube-ról</p>
-                    <button class="btn" id="premium-btn">Prémium próba</button>
-                </div>
-                <div class="banner-image">
-                    <i class="fab fa-youtube"></i>
-                </div>
-            </div>
+
             
             <!-- Home Page -->
             <div class="music-section" id="home-page">
@@ -89,7 +60,8 @@
                 </div>
                 <div id="pagination-controls" class="pagination-controls"></div>
                 <div class="loader" id="home-loader">Zenék betöltése...</div>
-            
+            </div>
+
             <!-- Discover Page -->
             <div class="music-section" id="discover-page" style="display: none;">
                 <h3>Felfedezés</h3>
@@ -103,6 +75,7 @@
                 <div class="song-grid" id="discover-songs">
                     <!-- Discovery songs will be loaded here -->
                 </div>
+                <div id="pagination-controls" class="pagination-controls"></div>
                 <div class="loader" id="discover-loader">Zenék betöltése...</div>
             </div>
             
@@ -112,13 +85,14 @@
                 <div class="song-grid" id="trending-songs">
                     <!-- Trending songs will be loaded here -->
                 </div>
+                <div id="pagination-controls" class="pagination-controls"></div>
                 <div class="loader" id="trending-loader">Zenék betöltése...</div>
             </div>
             
             <!-- Favorites Page -->
             <div class="music-section" id="favorites-page" style="display: none;">
                 <h3>Kedvenc zenéid</h3>
-                <div class="song-grid" id="favorites-grid">
+                <div class="song-grid" id="favorites-songs">
                     <!-- Favorite songs will be loaded here -->
                 </div>
                 <div id="favorites-empty" style="display: none; text-align: center; padding: 40px; color: #aaa;">
